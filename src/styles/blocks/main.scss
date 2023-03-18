@@ -1,0 +1,262 @@
+.page__main {
+  padding-top: 5px;
+  padding-bottom: 60px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 320px) {
+    background-image: url("/src/images/bg.png");
+  }
+
+  @media (min-width: 1439px) {
+    padding-top: 5px;
+  }
+}
+
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    width: 1140px;
+    flex-direction: row;
+    padding-top: 89px;
+  }
+}
+
+.main-slogan {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 47px;
+  margin-top: 0;
+}
+
+.main-slogan__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 15px;
+
+  @media (min-width: 1440px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    width: 400px;
+    margin: 0 0 30px;
+  }
+}
+
+.main-slogan__text-gradient {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+
+  @media (min-width: 1440px) {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.main-slogan__motto {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-width: 300px;
+}
+
+.text-gradient {
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.main-gifts {
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-top: 15px;
+  }
+}
+
+.main-gifts__text {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1440px) {
+    text-align: right;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+}
+
+.main-gifts__text-gradient {
+  font-weight: 700;
+  font-size: 18px;
+  @media (min-width: 1440px) {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+.gifts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 121px 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 15px;
+  column-gap: 5px;
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 145px 145px;
+    column-gap: 19px;
+    row-gap: 32px;
+  }
+}
+
+.main-gifts__list {
+  @media (min-width: 1440px) {
+    margin-bottom: 60px;
+  }
+}
+
+.gifts-list__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+  }
+
+  @media (min-width: 1440px) {
+    text-align: right;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.gift-skype {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  @media (min-width: 1440px) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.gift-crm {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.gift-dashboard {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  @media (min-width: 1440px) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.gift-widget {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  @media (min-width: 1440px) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.gift-widget__text-mobile,
+.gift-crm__text-mobile {
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.gift-widget__text-desktop,
+.gift-crm__text-desktop {
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.gifts-list__gift {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-left: 15px;
+
+  @media (min-width: 1440px) {
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+    padding-left: 0;
+  }
+}
+
+.gifts-list__gift-description {
+  @media (max-width: 1439px) {
+    @include visually-hidden;
+  }
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-button {
+  @media (max-width: 1439px) {
+    @include visually-hidden;
+  }
+
+  align-self: flex-end;
+  color: $text-white;
+  background-color: $button-bg;
+  padding: 21px 34px;
+  border-style: none;
+  min-width: 262px;
+}

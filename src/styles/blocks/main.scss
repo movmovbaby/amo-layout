@@ -7,7 +7,10 @@
   }
 
   @media (max-width: 320px) {
-    background-image: url("/src/images/bg.png");
+    background-image: image-set(
+      url("/src/images/bg.jpg") 1x,
+      url("/src/images/bg@2x.jpg") 2x
+    );
   }
 
   @media (min-width: 1439px) {
